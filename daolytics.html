@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DAOlytics participatory data tool</title>
+<title>daolytics participatory data tool</title>
 <!---
 - visualize connectivity matrix as network
 - give info on a few general network features: edge strength distribution, node degree distribution, small worldness, clustering coefficient, average path length
 - allow user to define threshold value for edges which is then used to update the network features
-- add scientific overview of the relevance of the provided network features and how they can be used to improve the DAO 
+- add scientific overview of the relevance of the provided network features and how they can be used to improve the DAO
 -->
-<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+<link href="Assets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
@@ -19,66 +19,64 @@
 <body>
 <!-- Header content -->
 <header>
-  <div class="profileLogo"> 
+  <div class="profileLogo">
     <!-- Profile logo. Add a img tag in place of <span>. -->
-    <p class="logoPlaceholder"><img src="Assets/images/biohacks.jpg" width="150" alt=""/></p>
+    <img src="Assets/images/biohacks.jpg" width="150" alt="biohacks"/>
   </div>
-  <div class="profilePhoto"> 
-    <!-- Profile photo --> 
-    <img src="Assets/Screen Shot 2022-04-09 at 11.16.28 am.png" width="226" height="234" alt="small world"/>
+  <div class="profilePhoto">
+    <!-- Profile photo -->
+    <img src="Assets/images/Screen Shot 2022-04-09 at 11.16.28 am.png" width="180" height="180" alt="small world"/>
 	</div>
   <section class="profileHeader">
-    <h1>DAOlytics</h1>
+    <h1>DAOLYTICS</h1>
 <h3>participation analytics tools for DAOs</h3>
     <hr>
-    <p>Through this tool, people can use freely available POAP distribution data to create interaction networks that describe the participation and interaction of members of a DAO. The tool then uses these networks to study the network architecture so that the DAO can gain insight in how it is functioning and what could be done to further improve it.
-- 
-- allow user to define threshold value for edges which is then used to update the network features
-- add scientific overview of the relevance of the provided network features and how they can be used to improve the DAO </p>
+    <p>Daolytics enable the use of POAP distribution data to create interaction networks that describe the participation and interaction of members of a DAO.
+      The tool studies the network architecture to gain insight in how a DAO is functioning and what could be done to further improve it.
+      Featuring edge threshold value definition.
   </section>
   <!-- Links to Social network accounts -->
-  
+
 	<aside class="socialNetworkNavBar">
-    
-		<div class="socialNetworkNav"> 
+
+		<div class="socialNetworkNav">
 		<!-- Add a Anchor tag with nested img tag here -->
-		<img src="Assets/Screen Shot 2022-04-09 at 4.58.33 pm.png" width="72" height="72" alt="filecoin"/>
+		<img src="Assets/images/Screen Shot 2022-04-09 at 4.58.33 pm.png" width="72" height="72" alt="filecoin"/>
 		</div>
-    	
-		<div class="socialNetworkNav"> 
-		<!-- Add a Anchor tag with nested img tag here --> 
-        <img src="Assets/Screen Shot 2022-04-09 at 5.09.09 pm.png" width="72" height="72" alt="the graph"/>
+
+		<div class="socialNetworkNav">
+		<!-- Add a Anchor tag with nested img tag here -->
+        <img src="Assets/images/Screen Shot 2022-04-09 at 5.09.09 pm.png" width="72" height="72" alt="the graph"/>
 		</div>
-		
-    	<div class="socialNetworkNav"> 
-      	<!-- Add a Anchor tag with nested img tag here --> 
-      	<img src="Assets/Screen Shot 2022-04-09 at 5.13.07 pm.png" width="74" height="80" alt="poaps"/>
+
+    	<div class="socialNetworkNav">
+      	<!-- Add a Anchor tag with nested img tag here -->
+      	<img src="Assets/images/Screen Shot 2022-04-09 at 5.13.07 pm.png" width="74" height="80" alt="poaps"/>
 		</div>
-    
+
   </aside>
 </header>
 <!-- content -->
-<section class="mainContent"> 
+<section class="mainContent">
   <!-- Contact details -->
   <section class="section1">
     <h2 class="sectionTitle">input</h2>
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
     <div class="section1Content">
-      
-		<p class="sectionContent"> All matrices for individual activities can be summed over a predefined time period. This results in a network that, between every possible pair of active DAO members, indicates in how many overlapping activities they participated. </p>
-		
+
+		<p class="sectionContent">Matrices for individual activities can be summed over a time period.
+                              The results indicates how many overlapping activities active DAO members participated to. </p>
+
 		<p><span> date <input type="date"> to <input type="date"</span> </p>
       <p><span> threshold <input type="range"></span> </p>
 	  <p>Fill in event ID numbers separated by a comma<span><fieldset>ID:</fieldset></span></p>
-      <p>Fill in event ID numbers separated by a comma<span><fieldset>ID:</fieldset></span></p>
-      <p>Fill in event ID numbers separated by a comma<span><fieldset>ID:</fieldset></span></p>
     </div>
   </section>
     <section class="section2">
     <h2 class="sectionTitle">output</h2>
-		
-		<!-- 
+
+		<!--
 fields where the user can input information are marked in blue
 fields that plot the output results are marked in green
  -->
@@ -88,11 +86,15 @@ fields that plot the output results are marked in green
     <!-- The network is plotted. All edges can have the same color or they can be colored based on their weight, whatever looks best.
   -->
     <article class="section2Content">
-      <h2 class="sectionContentTitle">network plotting</h2>
-      <h3 class="sectionContentSubTitle">visualize connectivity matrix as network</h3>
-      <p class="sectionContent">give info on a few general network features: edge strength distribution, node degree distribution, small worldness, clustering coefficient, average path length</p>
+      <h2 class="sectionContentTitle">Network Plotting</h2>
+      <h3 class="sectionContentSubTitle">Visualize connectivity matrix as network.</h3>
+
+      <hr class="sectionTitleRule">
+      <hr class="sectionTitleRule2">
+      <h2 class="sectionContentTitle">Bar Charts</h2>
+      <p class="sectionContent">Give info on a few general network features: edge strength distribution, node degree distribution, small worldness, clustering coefficient, average path length.</p>
     </article>
-    <!-- Edges Strenght  -->
+
     <article class="section2Content">
       <h2 class="sectionContentTitle">Cc Ash Sw</h2>
       <h3 class="sectionContentSubTitle"><canvas id="myChart" style="width:100%;max-width:600px"></canvas>
@@ -120,7 +122,7 @@ new Chart("myChart", {
   }
 });
 </script></h3>
-     
+
       <h3 class="sectionContentSubTitle"> <script>
 var xValues = ["clustering coefficient", "average shortest path", "small-worldness"];
 var yValues = [55, 49, 44, 24, 15];
@@ -143,10 +145,10 @@ new Chart("myChart", {
     }
   }
 });
-</script></h3>		
-		
+</script></h3>
+
     </article>
-    <!-- Replicate the above Div block to add more --> 
+    <!-- Replicate the above Div block to add more -->
   </section>
   <!-- Links to
 one: a histogram with the edge strength distribution. The dotted black line indicates the threshold defined by the user.
